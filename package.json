@@ -1,0 +1,16 @@
+{
+  "name": "AMS",
+  "version": "1.0.0",
+  "description": "Ambulance Management System",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1health",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "node": "^9.5.0",
+    "socket.io": "*"
+  }
+}
