@@ -163,7 +163,7 @@ class Emergency extends CI_Controller {
 			'time_confirmed'					=> get_ymdhis(),	
 			'emergency_date'					=> get_ymd(),
 			'emergency_time'					=> get_his(),
-			'emergency_callreference'			=> generate_code(0),
+			'emergency_callreference'			=> generate_code_v2(0),
 			'emergency_callername'				=> strip_tags($call_name),
 			'emergency_callerphone'				=> $call_phone,
 			'emergency_callerother'				=> (($other_phone == "")?NULL:$other_phone),
