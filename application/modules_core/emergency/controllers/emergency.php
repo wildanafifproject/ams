@@ -253,7 +253,7 @@ class Emergency extends CI_Controller {
 		    $this->session->set_flashdata('update_firebase', $chkAmbulance);
 		}
 
-		//redirect(base_url('dashboard'));
+		redirect(base_url('dashboard'));
     }
 	
 	function edit_data() {

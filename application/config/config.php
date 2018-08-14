@@ -15,7 +15,7 @@
 |
 */
 //$config['base_url']   = 'http://192.168.0.8/ams/';
-$config['base_url'] = 'http://wildanafif.id/gt_ams/ams/';
+$config['base_url'] = "http://".$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 //$config['base_url']	= 'http://ams.narengga.com/';
 
 /*
