@@ -162,7 +162,7 @@
                 $dtxField = $CI->m_global->getValueFieldHigh($tabel,$finds,$finds);
                 //print_r($dtxField);
                 $tmp = str_pad($dtxField->$finds, 5, '0', STR_PAD_LEFT); 
-                echo $tmp;
+       
                 $numberCode = explode("-", $tmp);
                 $numberCode = $numberCode[count($numberCode)-1];
                 $numberCode++;
