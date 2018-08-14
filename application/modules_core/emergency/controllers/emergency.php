@@ -250,7 +250,7 @@ class Emergency extends CI_Controller {
 			    "patientName"=> $name_patient
 		    );
 		    $this->fcm->sendNotif($chkAmbulance, $dataFcm);
-		    $this->session->set_flashdata('update_firebase', $chkAmbulance);
+		    //$this->session->set_flashdata('update_firebase', $chkAmbulance);
 		}
 
 		redirect(base_url('dashboard'));
