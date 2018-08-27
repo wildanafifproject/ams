@@ -2126,7 +2126,7 @@ class Api extends CI_Controller {
 				
 		$data = array(
 			'time_set_crew' 	=> get_ymdhis(),
-			'emergency_status' 	=> 4
+			'emergency_statuss' 	=> 4
 		);
 					
 		$updateData = $this->m_crud->update('tp_emergency', 'emergency_id', $data, $id);
