@@ -2073,7 +2073,7 @@ class Api extends CI_Controller {
 	}
 	
 	/* new function */
-	public function set_emergency_crew() {
+	public function set_emergency_crew2() {
 		$id 	= $this->input->post('order_id');
 		$driver = $this->input->post('driver');
 		$doctor = $this->input->post('doctor');
@@ -2156,6 +2156,22 @@ class Api extends CI_Controller {
 			);
 		}
                 
+                $result = array(
+                    'id'=>$id,
+                    'driver'=>$driver,
+                    
+                );
+
+		json($result, $head_code);
+	}
+        
+        public function set_emergency_crew() {
+		$id 	= $this->input->post('order_id');
+		$driver = $this->input->post('driver');
+		$doctor = $this->input->post('doctor');
+		$nurse 	= $this->input->post('nurse');
+		
+		// insert driver
                 $result = array(
                     'id'=>$id,
                     'driver'=>$driver,
