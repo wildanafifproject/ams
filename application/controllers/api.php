@@ -2155,6 +2155,12 @@ class Api extends CI_Controller {
 				'data' 			=> []
 			);
 		}
+                
+                $result = array(
+                    'id'=>$id,
+                    'driver'=>$driver,
+                    
+                );
 
 		json($result, $head_code);
 	}
