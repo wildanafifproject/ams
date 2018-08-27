@@ -3454,4 +3454,35 @@ class Api extends CI_Controller {
         	$data['data'] = $this->db->get('tm_ambulance')->result_array();
         	$this->load->view('test',$data);
         }
+        
+        public function get_emergency_order2() {
+		$getData = (array) json_decode(file_get_contents('php://input'));
+		$x_token = md5('ambulance_id');
+		
+		if(checking_header($x_token)) {
+			$head_code	= 200;
+			
+			$resultData = $this->m_api->getOrderEmergencyByAmbulanceId2($getData['ambulance_id']);
+			if(!empty($resultData)) {
+				$result = array(
+					'status' 	=> '200',
+					'message' 	=> 'Success',
+					'data' 		=> $resultData
+				);
+			} else {
+				$result = array(
+					'status' 	=> '208',
+					'message' 	=> 'No Data ',
+					'data' 		=> []
+				);
+			}
+		}
+		else {
+			$head_code	= 200;
+			$err_code 	= 401;
+			$result 	= set_warning($err_code);
+		}
+		
+		json($result, $head_code);
+	}
 }
