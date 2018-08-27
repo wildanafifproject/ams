@@ -2129,13 +2129,14 @@ class Api extends CI_Controller {
 			'emergency_status' 	=> 4
 		);
                 
-                echo "AS=".$id."d";
+                
 					
 		$updateData = $this->m_crud->update('tp_emergency', 'emergency_id', $data, $id);
 		$head_code	= 200;
 		if($updateData == 1) {
 			$resultData = $this->m_api->getIdentityEmergencyById($id);
 			$result = array(
+                                'df' => $id,
 				'status' 		=> '200',
 				'message' 		=> 'Update success',
 				'data_driver' 	=> set_emergency_driver($id),
