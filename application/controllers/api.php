@@ -2174,7 +2174,7 @@ class Api extends CI_Controller {
 		// insert driver
                 $result = $this->input->post();
 
-		json($result, $head_code);
+		json($result);
 	}
 	
 	/* new function */
