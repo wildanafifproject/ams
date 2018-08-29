@@ -2136,7 +2136,6 @@ class Api extends CI_Controller {
 		if($updateData == 1) {
 			$resultData = $this->m_api->getIdentityEmergencyById($id);
 			$result = array(
-                                'df' => $id,
 				'status' 		=> '200',
 				'message' 		=> 'Update success',
 				'data_driver' 	=> set_emergency_driver($id),
@@ -2155,28 +2154,8 @@ class Api extends CI_Controller {
 				'data' 			=> []
 			);
 		}
-                
-                $result = array(
-                    'id'=>$id,
-                    'driver'=>$driver,
-                    
-                );
 
 		json($result, $head_code);
-	}
-        
-        public function set_emergency_crew2() {
-		$id 	= $this->input->post('order_id');
-		$driver = $this->input->post('driver');
-		$doctor = $this->input->post('doctor');
-		$nurse 	= $this->input->post('nurse');
-		foreach($nurse as $row) {
-                    echo $row."<br>";
-			}
-		// insert driver
-                $result = $this->input->post();
-
-		json($result,200);
 	}
 	
 	/* new function */
