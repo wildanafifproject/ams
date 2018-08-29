@@ -2172,11 +2172,7 @@ class Api extends CI_Controller {
 		$nurse 	= $this->input->post('nurse');
 		
 		// insert driver
-                $result = array(
-                    'id'=>$id,
-                    'driver'=>$driver,
-                    
-                );
+                $result = $this->input->post();
 
 		json($result, $head_code);
 	}
