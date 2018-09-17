@@ -240,7 +240,7 @@ class Emergency extends CI_Controller {
 			
 			$this->session->set_flashdata('message', get_notification('insert', 1));
 			$this->session->set_flashdata('status', get_notify_status(1));
-            //$this->session->set_flashdata('notif_node', $this->m_forward->get_hospital_by_id($forward));
+            $this->session->set_flashdata('notif_node', $this->m_forward->get_hospital_by_id($forward));
             $this->load->library('fcm');
         	$dataFcm = array(
 			    "id" => $result,
@@ -250,7 +250,7 @@ class Emergency extends CI_Controller {
 			    "patientName"=> $name_patient
 		    );
 		    $this->fcm->sendNotif($chkAmbulance, $dataFcm);
-		    //$this->session->set_flashdata('update_firebase', $chkAmbulance);
+		    $this->session->set_flashdata('update_firebase', $chkAmbulance);
 		}
 
 		redirect(base_url('dashboard'));

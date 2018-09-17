@@ -1116,5 +1116,19 @@ class M_api extends CI_Model {
 
         return $result;
     }
+     public function getOrderNonEmergencyByAmbulanceId2($id) {
+        $status = array(0,2,3,9);
+        $this->db->where(array(
+            "ambulance_id" => $id,
+            "CONCAT((nonemergency_infodate),(' '),(nonemergency_infotime)) <="=> get_ymdhis()
+        ));
+        $this->db->where_not_in('nonemergency_status',$status);
+        $query = $this->db->get('tp_nonemergency');
+        $query = $query->result();
+
+        $result = set_nonemergency_history($query);
+
+        return $result;
+    }
 
 }

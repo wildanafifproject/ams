@@ -22,8 +22,8 @@
 	  ?>
 
 	  function writeUserData(ambulance_id, ambulance_no, ambulance_police, ambulance_username, ambulance_tracklatitude, ambulance_tracklongitude, ambulance_trackrotation) {
-		  firebase.database().ref('ambulance/' + ambulance_id).set({
-		  	ambulance_notifikasi: 0,
+		  firebase.database().ref('nonemergency/ambulance/' + ambulance_id).set({
+                    ambulance_notifikasi: 0,
 		    ambulance_id: ambulance_id,
 		    ambulance_no: ambulance_no,
 		    ambulance_police : ambulance_police,

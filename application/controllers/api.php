@@ -3438,7 +3438,7 @@ class Api extends CI_Controller {
             //$this->db->insert('tm_historytoken',$data);
         }
 
-        function test_notifikasi($value='')
+        function test_notifikasi($value=16)
         {
         	$this->load->library('fcm');
         	$data = array(
@@ -3448,7 +3448,14 @@ class Api extends CI_Controller {
 			    "ambulanceId"=>"ambulanceId",
 			    "patientName"=>"patientName"
 		    );
-		    $this->fcm->sendNotif(16, $data);
+		    $this->fcm->sendNotif($value, $data);
+        }
+        
+        function notifikasi_api() {
+            $this->load->library('fcm');
+            $data = $this->input->post();
+            $this->fcm->sendNotif($data['ambulanceId'], $data);
+            echo json_encode($data);        
         }
 
         function insert_to_firebase($value='')
@@ -3465,6 +3472,36 @@ class Api extends CI_Controller {
 			$head_code	= 200;
 			
 			$resultData = $this->m_api->getOrderEmergencyByAmbulanceId2($getData['ambulance_id']);
+			if(!empty($resultData)) {
+				$result = array(
+					'status' 	=> '200',
+					'message' 	=> 'Success',
+					'data' 		=> $resultData
+				);
+			} else {
+				$result = array(
+					'status' 	=> '208',
+					'message' 	=> 'No Data ',
+					'data' 		=> []
+				);
+			}
+		}
+		else {
+			$head_code	= 200;
+			$err_code 	= 401;
+			$result 	= set_warning($err_code);
+		}
+		
+		json($result, $head_code);
+	}
+        function get_nonemergency_order2() {
+		$getData = (array) json_decode(file_get_contents('php://input'));
+		$x_token = md5('ambulance_id');
+		
+		if(checking_header($x_token)) {
+			$head_code	= 200;
+			
+			$resultData = $this->m_api->getOrderNonEmergencyByAmbulanceId2($getData['ambulance_id']);
 			if(!empty($resultData)) {
 				$result = array(
 					'status' 	=> '200',

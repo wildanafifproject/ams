@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sos-ambulance",
+  "private_key_id": "7c89af87f0271c8dbe7e935030527a1beb620b92",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCz7wA/ZmaprnrC\nsqHyjvJluyCU9PH40GR9m3Inhsfiv/iez/OMpNldUNFJcJ7vHtpoMJVg8FL+6MIa\n77WGqJCVk5HPhUrdNDXDmSmg9/+ilYyn+rEO+bO0C85QS1lXSG3OxaqpfJm8Jr8F\nVwyr6+JQ6FixGyO6I5nR48Qdo2dos6+6aCoMJJ2wEn3nbtlWP1wTK2o9zWLPmBng\nlVEzknlRERnbMUm/pEsn4isyuYZFgtfXe8vQQqXxP6DbEYRWT0dw7UCgIGuaJ6FC\ntj/UKWZ/XnUrVcj0VkVdsTu4rO1f+pi/IMGSmeusmgK+r9NMK5AR06wt3yQq2G1O\nAmO1u2pzAgMBAAECggEABD4HJ6IumyM50hEBICVo/Kdf+h3DqLtNFehjgCAS4rs7\nouRB7e0jEiqqIeJNtP3pZgR4jnu2u+YupruZGuQq3dlIBPheY/8WTMF13vg0kZeX\nZIx/aTF6SwKY6iwPSVoJUL3jVgdR3phGmlsg5DAgZV+dBmFJQzBnW4X/D+MpjdPd\n7OJ1YVi0lezT6VOHKPxqgjo0EOVY6lM8+QOOSbKVy9Jv49yOhjj6DFuOTpnQYsnC\n6IKKY4KqWYMyDauVak4PX+MOwRLBO+UMKAC1Plr6jYX39TWADZHy15fO5X5v8mO8\nuMt8H2/3unt9AyZmR7DhG81q/dm9qwMvMys+LAvMyQKBgQDhnOKe2w4nVz4Ri+Hi\n1+JZJR12VzrQvQ81sPUc0ju1Vhwb7vjbw+D8DXaICtSs1J6YU4NZY5wJ4j0hUE5R\nOrtLGw4ffBIKsRxqU9U2EzFOIVIoVNkYRQKYnGliu3tEpSTW91hheCgBU4SKs5SH\nSIXbamEfrYX3/JggwIOLi+paCQKBgQDMKxlP6U6xjiMeqCGpOut3vJeVHdAYkwUn\n2fAfL8tuc12/ftqswbhidbEVlfBy88fGMb9cMAD0cikXGrbCdxdy8SaRiBi1y6UC\nrlemeX9b2mnUFZ4H5xPD6lgH02pbvvJKUkFVfDUjrkoLgF2wrRwBXEfPeT2qvoaf\nKt8TCqVvmwKBgAKbIk79bsNrkY74U6qgHcAz2oxEY6yHkoZnPd2QXBozHW4BK6S2\nNYIT0buujFhWuGJADLNaoDHJCDW7TLxJdmJetKIOd9Lhytc7kqnmPNqPLfjDSiKq\noWYL4HfAfKMFWVCWWNH/Zk7lnRFRE7UgVFN9fhO0mGiN5V/zeVGCUzmpAoGAA3Rz\nQDPtffmuxHUJ5Mg3ddY+JmrTu6a5PpxkgNKZOaxAGN53qta4XQoqzfe0ku1nIwZy\ne4fgbEKGSXrNPusu/WXxRiMsb98bUrlKiGmj6xT+F3WqL+4MGpObm75LHXRUu0c7\nDcxFRe5MGHe6niO/xpIeMPeXQI1qz8S086iJdiMCgYEAo2eJXvZnqzrd7f8nY8A6\nCzB7pO2H6zceb4taZxMNAXzEih4DT8Uq0n8gwHZawcb/ocNQDOh/+3HS02i5pci9\n5hxxrjne/CFVMAXchaHfjhNgnqoBhAh+SIQvJ1WI7DNW0BR/gqYb0EV5dRCzeUaD\nysu7Bsd5HNLSsrCs93c1ZAc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-6es88@sos-ambulance.iam.gserviceaccount.com",
+  "client_id": "105452964893141399876",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-6es88%40sos-ambulance.iam.gserviceaccount.com"
+}
